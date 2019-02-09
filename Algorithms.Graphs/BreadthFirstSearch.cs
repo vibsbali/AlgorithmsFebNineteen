@@ -33,6 +33,11 @@ namespace Algorithms.Graphs
             while (queue.Count != 0)
             {
                 var current = queue.Dequeue();
+
+                if (visited.Contains(current))
+                {
+                    continue;
+                }
                 visited.Add(current);
 
                 var neighbours = _graph.GetReachableNeighbours(current);
