@@ -1,5 +1,6 @@
 ﻿using System;
 using Algorithms.StringSearch;
+using Algorithms.Trees;
 
 namespace ConsoleRunner
 {
@@ -7,8 +8,17 @@ namespace ConsoleRunner
    {
       static void Main(string[] args)
       {
-         var bmh = new BoyerMoreHorspool();
-         Console.WriteLine(bmh.CanFind("hardbrushcltheantotohtohbrtoothush", "tooth"));
+          var trie = new Tries();
+          trie.Add("amex");
+          trie.Add("amir");
+          trie.Add("amritsar");
+
+          var words = trie.FindWords("am");
+          foreach (var word in words)
+          {
+              Console.WriteLine(word);
+          }
+
       }
    }
 }

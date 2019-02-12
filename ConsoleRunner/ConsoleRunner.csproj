@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Algorithms.StringSearch\Algorithms.StringSearch.csproj" />
+    <ProjectReference Include="..\Algorithms.Trees\Algorithms.Trees.csproj" />
   </ItemGroup>
 
 </Project>
